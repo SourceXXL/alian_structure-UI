@@ -11,11 +11,11 @@ import { Toaster } from 'sonner';
 import '@/lib/i18n';
 
 export const metadata: Metadata = {
-  title: 'stellAIverse - AI Agent Marketplace',
+  title: 'Alian-Structure - AI Agent Marketplace',
   description: 'Create, discover, and interact with AI agents in a cosmic universe',
   keywords: ['AI agents', 'marketplace', 'automation', 'AI', 'Stellar'],
   openGraph: {
-    title: 'stellAIverse',
+    title: 'Alian-Structure',
     description: 'Beautiful AI agent marketplace with cosmic UI',
     type: 'website',
     images: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         url: '/icons/icon-512x512.png',
         width: 512,
         height: 512,
-        alt: 'stellAIverse',
+        alt: 'Alian-Structure',
       },
     ],
   },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'stellAIverse',
+    title: 'Alian-Structure',
     startupImage: [
       {
         url: '/icons/icon-192x192.png',
@@ -105,7 +105,7 @@ function RootLayout({ children }: { children: React.ReactNode }) {
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="stellAIverse" />
+        <meta name="apple-mobile-web-app-title" content="Alian-Structure" />
         
         {/* Critical CSS inline */}
         <style

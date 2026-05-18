@@ -2,7 +2,7 @@ import React from "react";
 import ProvenanceExplorer from "@/features/provenance/components/ProvenanceExplorer";
 
 export const metadata = {
-  title: "Provenance Explorer | stellAIverse",
+  title: "Provenance Explorer | Alian-Structure",
   description: "Audit and visualize agent actions and provenance records.",
 };
 

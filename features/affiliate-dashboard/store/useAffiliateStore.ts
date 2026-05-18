@@ -119,7 +119,7 @@ const MOCK_PAYOUT_REQUESTS: PayoutRequest[] = [
 
 const MOCK_PROGRAM: AffiliateProgram = {
   id: 'prog-001',
-  name: 'stellAIverse Affiliate Program',
+  name: 'Alian-Structure Affiliate Program',
   status: 'active',
   commissionStructure: {
     direct: 10,

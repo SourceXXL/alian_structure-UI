@@ -67,7 +67,7 @@ export default function ProvenanceExplorer() {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
           <h1 className="text-3xl font-bold glow-text leading-tight mb-2">Provenance Explorer</h1>
-          <p className="text-gray-400 text-sm">Visualize and audit every agent action in the stellAIverse universe.</p>
+          <p className="text-gray-400 text-sm">Visualize and audit every agent action in the Alian-Structure universe.</p>
         </div>
         <div className="flex gap-4">
           <div className="text-right">

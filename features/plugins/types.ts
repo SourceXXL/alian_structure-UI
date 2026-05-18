@@ -1,6 +1,6 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // Plugin Management Types & Mock Data
-// Issue: Plugin Management UI — stellAIverse-frontend
+// Issue: Plugin Management UI — Alian-Structure-frontend
 // ─────────────────────────────────────────────────────────────────────────────
 
 export type PluginStatus = "active" | "inactive" | "pending" | "error";
@@ -101,7 +101,7 @@ export const MOCK_PLUGINS: Plugin[] = [
     name: "Legacy Bridge",
     version: "1.2.0",
     author: "OldStack Co.",
-    description: "Bridges legacy REST APIs to the stellAIverse plugin bus.",
+    description: "Bridges legacy REST APIs to the Alian-Structure plugin bus.",
     status: "error",
     sandboxLevel: "none",
     permissions: ["read:*", "write:*"],
@@ -119,7 +119,7 @@ export const MOCK_AUDIT_LOGS: AuditLog[] = [
     pluginId: "plg_001",
     pluginName: "StellarPay Gateway",
     action: "activated",
-    performedBy: "admin@stellaiverse.io",
+    performedBy: "admin@Alian-Structure.io",
     timestamp: "2026-03-01T12:05:00Z",
     details: "Plugin activated after security review.",
   },
@@ -137,7 +137,7 @@ export const MOCK_AUDIT_LOGS: AuditLog[] = [
     pluginId: "plg_003",
     pluginName: "Analytics Beacon",
     action: "deactivated",
-    performedBy: "admin@stellaiverse.io",
+    performedBy: "admin@Alian-Structure.io",
     timestamp: "2026-02-14T08:05:00Z",
     details: "Deactivated pending re-verification of data handling.",
   },
@@ -146,7 +146,7 @@ export const MOCK_AUDIT_LOGS: AuditLog[] = [
     pluginId: "plg_004",
     pluginName: "NFT Provenance Checker",
     action: "registered",
-    performedBy: "admin@stellaiverse.io",
+    performedBy: "admin@Alian-Structure.io",
     timestamp: "2026-03-25T14:02:00Z",
     details: "New plugin registered, awaiting activation approval.",
   },
@@ -164,7 +164,7 @@ export const MOCK_AUDIT_LOGS: AuditLog[] = [
     pluginId: "plg_001",
     pluginName: "StellarPay Gateway",
     action: "updated",
-    performedBy: "admin@stellaiverse.io",
+    performedBy: "admin@Alian-Structure.io",
     timestamp: "2026-03-01T11:55:00Z",
     details: "Updated to v2.1.0 from v2.0.3.",
   },

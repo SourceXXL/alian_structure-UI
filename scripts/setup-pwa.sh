@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# PWA Setup Script for stellAIverse
+# PWA Setup Script for Alian-Structure
 # This script helps set up the PWA features
 
-echo "🚀 Setting up PWA features for stellAIverse..."
+echo "🚀 Setting up PWA features for Alian-Structure..."
 
 # Check if Node.js is installed
 if ! command -v node &> /dev/null; then

@@ -63,7 +63,7 @@ const BugReportPage = () => {
               Bug Report Submitted!
             </h1>
             <p className="text-xl text-gray-300">
-              Thank you for helping improve stellAIverse
+              Thank you for helping improve Alian-Structure
             </p>
           </div>
 
@@ -134,7 +134,7 @@ const BugReportPage = () => {
             Report a Bug
           </h1>
           <p className="text-xl text-gray-300 mb-2">
-            Help us improve stellAIverse by reporting issues
+            Help us improve Alian-Structure by reporting issues
           </p>
           <p className="text-lg text-cosmic-blue">
             Earn rewards for valuable bug reports
@@ -210,7 +210,7 @@ const BugReportPage = () => {
                   </svg>
                 </div>
                 <h4 className="font-medium text-white mb-2">Improve Platform</h4>
-                <p>Help us make stellAIverse better for everyone</p>
+                <p>Help us make Alian-Structure better for everyone</p>
               </div>
               
               <div>

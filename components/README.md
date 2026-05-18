@@ -1,6 +1,6 @@
 # Stellar Wallet Components
 
-This directory contains the React components for Stellar wallet integration in the stellAIverse application.
+This directory contains the React components for Stellar wallet integration in the Alian-Structure application.
 
 ## Components Overview
 

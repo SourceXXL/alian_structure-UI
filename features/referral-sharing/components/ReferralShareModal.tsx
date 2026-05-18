@@ -80,7 +80,7 @@ const ReferralShareModal: React.FC<ReferralShareModalProps> = ({
 
   const shareOnSocial = (platform: string) => {
     if (!referralLink) return;
-    const text = `Join me on stellAIverse! Discover amazing AI agents and earn ${referralLink.reward} when you sign up!`;
+    const text = `Join me on Alian-Structure! Discover amazing AI agents and earn ${referralLink.reward} when you sign up!`;
     const url = encodeURIComponent(referralLink.url);
     
     let shareUrl = '';

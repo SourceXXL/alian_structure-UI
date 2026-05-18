@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Allow indexing of all content
-Sitemap: https://stellaiverse.com/sitemap.xml
+Sitemap: https://Alian-Structure.com/sitemap.xml
 
 # Block common non-content paths
 Disallow: /api/

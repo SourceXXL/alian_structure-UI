@@ -16,7 +16,7 @@ describe('ReferralService', () => {
   const mockReferralLink: ReferralLink = {
     id: 'ref_123',
     code: 'ABC12345',
-    url: 'https://stellaiverse.com/ref/ABC12345',
+    url: 'https://Alian-Structure.com/ref/ABC12345',
     userId: mockUserId,
     createdAt: '2024-01-01T00:00:00Z',
     isActive: true,
@@ -30,7 +30,7 @@ describe('ReferralService', () => {
     // Mock window.location.origin
     Object.defineProperty(window, 'location', {
       value: {
-        origin: 'https://stellaiverse.com',
+        origin: 'https://Alian-Structure.com',
       },
       writable: true,
     });

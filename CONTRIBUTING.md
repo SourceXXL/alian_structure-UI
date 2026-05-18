@@ -1,6 +1,6 @@
-# Contributing to stellAIverse-frontend
+# Contributing to Alian-Structure-frontend
 
-Thank you for your interest in contributing to stellAIverse! We welcome contributions from the community, including bug reports, feature requests, documentation improvements, and code contributions.
+Thank you for your interest in contributing to Alian-Structure! We welcome contributions from the community, including bug reports, feature requests, documentation improvements, and code contributions.
 
 ## Code of Conduct
 
@@ -35,11 +35,11 @@ Have an idea for a new feature? Open an issue with:
 ```bash
 # Fork the repository on GitHub
 # Clone your fork
-git clone https://github.com/YOUR_USERNAME/stellAIverse-frontend.git
-cd stellAIverse-frontend
+git clone https://github.com/YOUR_USERNAME/Alian-Structure-frontend.git
+cd Alian-Structure-frontend
 
 # Add upstream remote
-git remote add upstream https://github.com/StellAIverse/stellAIverse-frontend.git
+git remote add upstream https://github.com/Alian-Structure/Alian-Structure-frontend.git
 ```
 
 #### Step 2: Create a Feature Branch
@@ -217,4 +217,4 @@ npm run test:coverage
 
 By contributing, you agree that your contributions will be licensed under the MIT License.
 
-Thank you for helping make stellAIverse better! 🚀✨
+Thank you for helping make Alian-Structure better! 🚀✨

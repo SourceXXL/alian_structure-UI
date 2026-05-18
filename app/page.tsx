@@ -12,7 +12,7 @@ export default function Home() {
         
         <div className="max-w-4xl mx-auto space-y-6 md:space-y-8 relative">
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold glow-text animate-float leading-tight px-2">
-            Welcome to stellAIverse
+            Welcome to Alian-Structure
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed px-4">
             Discover, create, and interact with AI agents in a beautiful cosmic universe.
@@ -83,7 +83,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-cosmic-purple/10 py-10 px-4 text-center text-gray-500 text-sm">
-        <p>© 2025 stellAIverse. All rights reserved.</p>
+        <p>© 2025 Alian-Structure. All rights reserved.</p>
         <div className="mt-4 flex justify-center gap-6">
           <Link href="#" className="hover:text-cosmic-purple transition-smooth">Terms</Link>
           <Link href="#" className="hover:text-cosmic-purple transition-smooth">Privacy</Link>

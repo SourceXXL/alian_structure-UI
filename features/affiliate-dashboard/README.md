@@ -1,6 +1,6 @@
 # Affiliate Dashboard Feature
 
-A comprehensive affiliate program dashboard for stellAIverse that enables affiliates to manage referrals, track commissions, and request payouts.
+A comprehensive affiliate program dashboard for Alian-Structure that enables affiliates to manage referrals, track commissions, and request payouts.
 
 ## Features
 
@@ -274,4 +274,4 @@ For issues or questions about the affiliate program:
 
 ## License
 
-Part of the stellAIverse platform. See LICENSE file for details.
+Part of the Alian-Structure platform. See LICENSE file for details.

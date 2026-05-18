@@ -1,6 +1,6 @@
 {
-  "name": "stellAIverse - AI Agent Marketplace",
-  "short_name": "stellAIverse",
+  "name": "Alian-Structure - AI Agent Marketplace",
+  "short_name": "Alian-Structure",
   "description": "Create, discover, and interact with AI agents in a beautiful cosmic universe",
   "theme_color": "#1a1a2e",
   "background_color": "#0f0f23",
@@ -69,14 +69,14 @@
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "stellAIverse desktop view - AI agent marketplace"
+      "label": "Alian-Structure desktop view - AI agent marketplace"
     },
     {
       "src": "/screenshots/mobile-1.png",
       "sizes": "390x844",
       "type": "image/png",
       "form_factor": "narrow",
-      "label": "stellAIverse mobile view - AI agent marketplace"
+      "label": "Alian-Structure mobile view - AI agent marketplace"
     }
   ],
   "shortcuts": [

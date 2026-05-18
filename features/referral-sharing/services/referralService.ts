@@ -9,7 +9,7 @@ export class ReferralService {
   // Generate a new referral link
   static async generateReferralLink(userId: string, reward: string = '10 XLM'): Promise<ReferralLink> {
     const referralCode = this.generateReferralCode();
-    const baseUrl = typeof window !== 'undefined' ? window.location.origin : 'https://stellaiverse.com';
+    const baseUrl = typeof window !== 'undefined' ? window.location.origin : 'https://Alian-Structure.com';
     const referralUrl = `${baseUrl}/ref/${referralCode}`;
 
     const referralLink: Omit<ReferralLink, 'id' | 'createdAt'> = {

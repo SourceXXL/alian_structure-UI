@@ -1,9 +1,9 @@
 const CACHE_VERSION = 'v1.2.0';
-const STATIC_CACHE = `stellaiverse-static-${CACHE_VERSION}`;
-const API_CACHE = `stellaiverse-api-${CACHE_VERSION}`;
-const IMAGE_CACHE = `stellaiverse-images-${CACHE_VERSION}`;
-const FONT_CACHE = `stellaiverse-fonts-${CACHE_VERSION}`;
-const RUNTIME_CACHE = `stellaiverse-runtime-${CACHE_VERSION}`;
+const STATIC_CACHE = `Alian-Structure-static-${CACHE_VERSION}`;
+const API_CACHE = `Alian-Structure-api-${CACHE_VERSION}`;
+const IMAGE_CACHE = `Alian-Structure-images-${CACHE_VERSION}`;
+const FONT_CACHE = `Alian-Structure-fonts-${CACHE_VERSION}`;
+const RUNTIME_CACHE = `Alian-Structure-runtime-${CACHE_VERSION}`;
 
 // Critical assets to cache immediately on install
 const STATIC_ASSETS = [
@@ -110,7 +110,7 @@ self.addEventListener('activate', (event) => {
       caches.keys()
         .then((cacheNames) => {
           const oldCaches = cacheNames.filter((cacheName) => {
-            return cacheName.startsWith('stellaiverse-') && 
+            return cacheName.startsWith('Alian-Structure-') && 
                    !cacheName.includes(CACHE_VERSION);
           });
           
@@ -246,7 +246,7 @@ async function getOfflineFallback() {
     `<!DOCTYPE html>
     <html>
       <head>
-        <title>Offline - stellAIverse</title>
+        <title>Offline - Alian-Structure</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
@@ -624,7 +624,7 @@ self.addEventListener('push', (event) => {
     } catch (e) {
       // Fallback to text if JSON parsing fails
       notificationData = {
-        title: 'stellAIverse',
+        title: 'Alian-Structure',
         body: event.data.text(),
         icon: '/icons/icon-192x192.png',
         badge: '/icons/icon-192x192.png',
@@ -635,7 +635,7 @@ self.addEventListener('push', (event) => {
     }
     
     const options = {
-      body: notificationData.body || 'New notification from stellAIverse',
+      body: notificationData.body || 'New notification from Alian-Structure',
       icon: notificationData.icon || '/icons/icon-192x192.png',
       badge: notificationData.badge || '/icons/icon-192x192.png',
       tag: notificationData.tag || 'general',
@@ -653,7 +653,7 @@ self.addEventListener('push', (event) => {
     
     event.waitUntil(
       self.registration.showNotification(
-        notificationData.title || 'stellAIverse',
+        notificationData.title || 'Alian-Structure',
         options
       )
     );
@@ -774,7 +774,7 @@ async function getCacheStats() {
   const cacheNames = await caches.keys();
   
   for (const cacheName of cacheNames) {
-    if (cacheName.startsWith('stellaiverse-')) {
+    if (cacheName.startsWith('Alian-Structure-')) {
       const cache = await caches.open(cacheName);
       const keys = await cache.keys();
       
@@ -814,9 +814,9 @@ async function getCacheStats() {
 // Clear all caches
 async function clearAllCaches() {
   const cacheNames = await caches.keys();
-  const stellAIverseCaches = cacheNames.filter(name => name.startsWith('stellaiverse-'));
+  const Alian-StructureCaches = cacheNames.filter(name => name.startsWith('Alian-Structure-'));
   
-  await Promise.all(stellAIverseCaches.map(name => caches.delete(name)));
+  await Promise.all(Alian-StructureCaches.map(name => caches.delete(name)));
   console.log('[SW] All caches cleared');
 }
 

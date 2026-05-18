@@ -4,7 +4,7 @@ import DelegationDashboard from "@/features/wallet/components/DelegationDashboar
 import SessionRecovery from "@/features/wallet/components/SessionRecovery";
 
 export const metadata = {
-  title: "Wallet Settings | stellAIverse",
+  title: "Wallet Settings | Alian-Structure",
   description: "Manage your linked Stellar wallets, delegations, and active session recovery.",
 };
 

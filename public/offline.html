@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Offline - stellAIverse</title>
+    <title>Offline - Alian-Structure</title>
     <style>
         * {
             margin: 0;
@@ -218,10 +218,10 @@
             if ('caches' in window) {
                 try {
                     const cacheNames = await caches.keys();
-                    const stellAIverseCaches = cacheNames.filter(name => name.startsWith('stellaiverse-'));
+                    const Alian-StructureCaches = cacheNames.filter(name => name.startsWith('Alian-Structure-'));
                     
-                    console.log(`Found ${stellAIverseCaches.length} caches`);
-                    stellAIverseCaches.forEach(cacheName => {
+                    console.log(`Found ${Alian-StructureCaches.length} caches`);
+                    Alian-StructureCaches.forEach(cacheName => {
                         caches.open(cacheName).then(cache => {
                             cache.keys().then(keys => {
                                 console.log(`${cacheName}: ${keys.length} entries`);

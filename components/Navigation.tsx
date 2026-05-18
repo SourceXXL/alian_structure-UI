@@ -91,7 +91,7 @@ export const Navigation: React.FC = () => {
             className="flex items-center gap-2 hover:opacity-80 transition-smooth"
           >
             <span className="text-2xl text-cosmic-purple font-bold">*</span>
-            <span className="glow-text font-bold text-xl tracking-tight">stellAIverse</span>
+            <span className="glow-text font-bold text-xl tracking-tight">Alian-Structure</span>
           </Link>
 
           {/* Desktop Menu */}
