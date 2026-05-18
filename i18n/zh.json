@@ -1,0 +1,56 @@
+{
+  "Marketplace": "市场",
+  "Create Agent": "创建代理",
+  "Portfolio": "投资组合",
+  "Learn": "学习",
+  "waitlist": {
+    "title": "解锁",
+    "subtitle": "AI 代理的未来",
+    "description": "加入独家高级等候名单，成为首批体验下一代AI代理创建和互动的用户。",
+    "limitedSpots": "名额有限",
+    "peopleWaiting": "2,847+ 人等待中",
+    "earlyAccess": "即将开放抢先体验",
+    "reserveSpot": "预留位置",
+    "reserveDescription": "输入您的邮箱加入高级等候名单，获得独家抢先体验机会。",
+    "emailPlaceholder": "输入您的邮箱地址",
+    "joinButton": "加入高级等候名单",
+    "joining": "加入中...",
+    "noSpam": "无垃圾邮件，随时可取消订阅。",
+    "premiumBenefits": "高级权益",
+    "benefits": {
+      "earlyAccess": {
+        "title": "抢先体验",
+        "description": "成为首批体验高级AI代理功能的用户。"
+      },
+      "exclusiveDiscounts": {
+        "title": "独家折扣",
+        "description": "获得高级订阅和代理市场费用的终身折扣。"
+      },
+      "prioritySupport": {
+        "title": "优先支持",
+        "description": "获得专属支持，响应时间更快，提供个性化协助。"
+      },
+      "betaFeatures": {
+        "title": "Beta 功能",
+        "description": "访问前沿功能，参与塑造AI代理的未来。"
+      },
+      "communityAccess": {
+        "title": "社区访问",
+        "description": "加入高级用户和AI代理创建者的专属社区。"
+      },
+      "enhancedAnalytics": {
+        "title": "增强分析",
+        "description": "获得AI代理性能的高级洞察和分析。"
+      }
+    },
+    "readyTitle": "准备好改变您的AI体验了吗？",
+    "readyDescription": "不要错过站在AI代理创新前沿的机会。",
+    "joinNowButton": "立即加入等候名单",
+    "success": {
+      "title": "您已加入名单！",
+      "message": "感谢您加入高级等候名单。我们将很快通过独家更新与您联系。",
+      "checkEmail": "请查看您的邮箱确认信息。",
+      "addAnother": "添加其他邮箱"
+    }
+  }
+}

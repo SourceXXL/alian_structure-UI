@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline - stellAIverse</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f0f23 50%, #1a1a2e 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .offline-container {
+            max-width: 500px;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .offline-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .retry-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .retry-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .retry-btn:active {
+            transform: translateY(0);
+        }
+
+        .status {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 3s infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    
+    <div class="offline-container">
+        <div class="offline-icon">
+            📡
+        </div>
+        
+        <h1>You're Offline</h1>
+        
+        <p>
+            It looks like you've lost your internet connection. 
+            Some features may not be available until you're back online.
+        </p>
+        
+        <button class="retry-btn" onclick="window.location.reload()">
+            Try Again
+        </button>
+        
+        <div class="status" id="status">
+            Checking connection...
+        </div>
+    </div>
+
+    <script>
+        // Generate random stars
+        function generateStars() {
+            const starsContainer = document.getElementById('stars');
+            const starCount = 50;
+            
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 3 + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+
+        // Check connection status with enhanced features
+        function checkConnection() {
+            const status = document.getElementById('status');
+            const retryBtn = document.querySelector('.retry-btn');
+            
+            if (navigator.onLine) {
+                status.textContent = 'Connection restored! Redirecting...';
+                retryBtn.textContent = 'Loading...';
+                retryBtn.disabled = true;
+                
+                // Try to fetch a small resource to confirm connection
+                fetch('/', { method: 'HEAD' })
+                    .then(() => {
+                        setTimeout(() => {
+                            window.location.href = '/';
+                        }, 1000);
+                    })
+                    .catch(() => {
+                        status.textContent = 'Connection detected but server unavailable. Please try again.';
+                        retryBtn.textContent = 'Try Again';
+                        retryBtn.disabled = false;
+                    });
+            } else {
+                status.textContent = 'Still offline. Please check your connection.';
+                retryBtn.textContent = 'Try Again';
+                retryBtn.disabled = false;
+            }
+        }
+
+        // Enhanced retry functionality
+        function retryConnection() {
+            const retryBtn = document.querySelector('.retry-btn');
+            const status = document.getElementById('status');
+            
+            retryBtn.textContent = 'Checking...';
+            retryBtn.disabled = true;
+            status.textContent = 'Testing connection...';
+            
+            // Test connection with a small request
+            fetch('/', { method: 'HEAD', cache: 'no-store' })
+                .then(response => {
+                    if (response.ok) {
+                        status.textContent = 'Connection restored! Redirecting...';
+                        setTimeout(() => {
+                            window.location.href = '/';
+                        }, 1000);
+                    } else {
+                        throw new Error('Server error');
+                    }
+                })
+                .catch(error => {
+                    status.textContent = 'Connection failed. Please check your internet connection.';
+                    retryBtn.textContent = 'Try Again';
+                    retryBtn.disabled = false;
+                });
+        }
+
+        // Get cache information
+        async function getCacheInfo() {
+            if ('caches' in window) {
+                try {
+                    const cacheNames = await caches.keys();
+                    const stellAIverseCaches = cacheNames.filter(name => name.startsWith('stellaiverse-'));
+                    
+                    console.log(`Found ${stellAIverseCaches.length} caches`);
+                    stellAIverseCaches.forEach(cacheName => {
+                        caches.open(cacheName).then(cache => {
+                            cache.keys().then(keys => {
+                                console.log(`${cacheName}: ${keys.length} entries`);
+                            });
+                        });
+                    });
+                } catch (error) {
+                    console.error('Error getting cache info:', error);
+                }
+            }
+        }
+
+        // Listen for connection changes
+        window.addEventListener('online', () => {
+            console.log('Connection restored');
+            checkConnection();
+        });
+
+        window.addEventListener('offline', () => {
+            console.log('Connection lost');
+            document.getElementById('status').textContent = 'Connection lost.';
+            const retryBtn = document.querySelector('.retry-btn');
+            retryBtn.textContent = 'Try Again';
+            retryBtn.disabled = false;
+        });
+
+        // Listen for service worker messages
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.addEventListener('message', (event) => {
+                if (event.data && event.data.type === 'SW_UPDATED') {
+                    console.log('Service worker updated');
+                    document.getElementById('status').textContent = 'App updated. Please refresh.';
+                }
+            });
+        }
+
+        // Enhanced retry button
+        document.querySelector('.retry-btn').addEventListener('click', (e) => {
+            e.preventDefault();
+            retryConnection();
+        });
+
+        // Initialize
+        generateStars();
+        getCacheInfo();
+        checkConnection();
+
+        // Check connection every 5 seconds
+        setInterval(checkConnection, 5000);
+
+        // Add keyboard shortcut for retry (Ctrl/Cmd + R)
+        document.addEventListener('keydown', (e) => {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'r') {
+                e.preventDefault();
+                retryConnection();
+            }
+        });
+    </script>
+</body>
+</html>

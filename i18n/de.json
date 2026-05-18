@@ -1,0 +1,56 @@
+{
+  "Marketplace": "Marktplatz",
+  "Create Agent": "Agenten erstellen",
+  "Portfolio": "Portfolio",
+  "Learn": "Lernen",
+  "waitlist": {
+    "title": "Schalten Sie die Zukunft von",
+    "subtitle": "KI-Agenten frei",
+    "description": "Treten Sie der exklusiven Premium-Warteliste bei und gehören Sie zu den Ersten, die die nächste Generation der KI-Agenten-Erstellung und -Interaktion erleben.",
+    "limitedSpots": "BEGRENZTE PLÄTZE VERFÜGBAR",
+    "peopleWaiting": "2,847+ warten",
+    "earlyAccess": "Frühzugriff bald verfügbar",
+    "reserveSpot": "Sichern Sie sich Ihren Platz",
+    "reserveDescription": "Geben Sie Ihre E-Mail-Adresse ein, um der Premium-Warteliste beizutreten und exklusiven Frühzugriff zu erhalten.",
+    "emailPlaceholder": "E-Mail-Adresse eingeben",
+    "joinButton": "Premium-Warteliste beitreten",
+    "joining": "Beitreten...",
+    "noSpam": "Kein Spam, niemals. Jederzeit abbestellbar.",
+    "premiumBenefits": "Premium-Vorteile",
+    "benefits": {
+      "earlyAccess": {
+        "title": "Frühzugriff",
+        "description": "Seien Sie der Erste, der Premium-KI-Agenten-Funktionen vor allen anderen erlebt."
+      },
+      "exclusiveDiscounts": {
+        "title": "Exklusive Rabatte",
+        "description": "Erhalten Sie lebenslange Rabatte auf Premium-Abonnements und Agenten-Marktplatzgebühren."
+      },
+      "prioritySupport": {
+        "title": "Prioritäts-Support",
+        "description": "Erhalten Sie dedizierte Unterstützung mit schnelleren Antwortzeiten und persönlicher Hilfe."
+      },
+      "betaFeatures": {
+        "title": "Beta-Funktionen",
+        "description": "Zugang zu cutting-edge Funktionen und Teilnahme an der Gestaltung der Zukunft von KI-Agenten."
+      },
+      "communityAccess": {
+        "title": "Community-Zugang",
+        "description": "Treten Sie einer exklusiven Community von Premium-Nutzern und KI-Agenten-Erstellern bei."
+      },
+      "enhancedAnalytics": {
+        "title": "Erweiterte Analysen",
+        "description": "Erhalten Sie fortgeschrittene Einblicke und Analysen für die Leistung Ihrer KI-Agenten."
+      }
+    },
+    "readyTitle": "Bereit, Ihre KI-Erfahrung zu transformieren?",
+    "readyDescription": "Verpassen Sie nicht die Chance, an der Spitze der KI-Agenten-Innovation zu stehen.",
+    "joinNowButton": "Jetzt der Warteliste beitreten",
+    "success": {
+      "title": "Sie sind auf der Liste!",
+      "message": "Danke, dass Sie der Premium-Warteliste beigetreten sind. Wir werden uns bald mit exklusiven Updates bei Ihnen melden.",
+      "checkEmail": "Überprüfen Sie Ihre E-Mail auf eine Bestätigungsnachricht.",
+      "addAnother": "Weitere E-Mail hinzufügen"
+    }
+  }
+}

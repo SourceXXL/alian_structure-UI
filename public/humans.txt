@@ -1,0 +1,44 @@
+/* HUMANS.TXT */
+    
+    STELLAIVERSE - AI Agent Marketplace
+    Website: https://stellaiverse.com
+    Twitter: @stellAIverse
+    Location: Global
+    
+    /* TEAM */
+    
+    Lead Developer: Oseji Fabian
+    Contact: fabian@stellaiverse.com
+    
+    /* THANKS */
+    
+    Next.js Team - Amazing React framework
+    Tailwind CSS - Utility-first CSS framework
+    Stellar Development Foundation - Blockchain infrastructure
+    
+    /* SITE */
+    
+    Standards: HTML5, CSS3, JavaScript ES2022
+    Components: React, Next.js, TypeScript
+    Software: VS Code, Git, Node.js
+    
+    /* TECHNOLOGY */
+    
+    Frontend: Next.js 16, React 18, TypeScript
+    Styling: Tailwind CSS, PostCSS
+    State Management: Zustand, React Query
+    Blockchain: Stellar SDK, Freighter API
+    PWA: Service Workers, Web App Manifest
+    
+    /* PERFORMANCE */
+    
+    Caching: Aggressive service worker caching
+    Optimization: Image optimization, code splitting
+    Monitoring: Performance metrics, error tracking
+    
+    /* ACCESSIBILITY */
+    
+    WCAG 2.1 AA compliant
+    Screen reader friendly
+    Keyboard navigation support
+    High contrast mode support

@@ -1,0 +1,56 @@
+{
+  "Marketplace": "マーケットプレイス",
+  "Create Agent": "エージェントを作成",
+  "Portfolio": "ポートフォリオ",
+  "Learn": "学ぶ",
+  "waitlist": {
+    "title": "の未来を解き放つ",
+    "subtitle": "AIエージェント",
+    "description": "限定プレミアム待機リストに参加し、次世代のAIエージェント作成と対話を最初に体験しましょう。",
+    "limitedSpots": "限定枠あり",
+    "peopleWaiting": "2,847+人待機中",
+    "earlyAccess": "早期アクセス近日公開",
+    "reserveSpot": "席を予約",
+    "reserveDescription": "メールアドレスを入力してプレミアム待機リストに参加し、限定早期アクセスを取得しましょう。",
+    "emailPlaceholder": "メールアドレスを入力",
+    "joinButton": "プレミアム待機リストに参加",
+    "joining": "参加中...",
+    "noSpam": "スパムなし。いつでも配信停止可能。",
+    "premiumBenefits": "プレミアム特典",
+    "benefits": {
+      "earlyAccess": {
+        "title": "早期アクセス",
+        "description": "誰よりも早くプレミアムAIエージェント機能を体験しましょう。"
+      },
+      "exclusiveDiscounts": {
+        "title": "限定割引",
+        "description": "プレミアムサブスクリプションとエージェントマーケットプレイス料金の生涯割引を取得。"
+      },
+      "prioritySupport": {
+        "title": "優先サポート",
+        "description": "より速い応答時間とパーソナライズされた支援で専用サポートを受けましょう。"
+      },
+      "betaFeatures": {
+        "title": "ベータ機能",
+        "description": "最先端機能にアクセスし、AIエージェントの未来形成に参加しましょう。"
+      },
+      "communityAccess": {
+        "title": "コミュニティアクセス",
+        "description": "プレミアムユーザーとAIエージェント作成者の限定コミュニティに参加しましょう。"
+      },
+      "enhancedAnalytics": {
+        "title": "強化分析",
+        "description": "AIエージェントのパフォーマンスに関する高度な洞察と分析を取得。"
+      }
+    },
+    "readyTitle": "AI体験を変革する準備はできましたか？",
+    "readyDescription": "AIエージェント革新の最前線に立つ機会を逃さないでください。",
+    "joinNowButton": "今すぐ待機リストに参加",
+    "success": {
+      "title": "リストに登録されました！",
+      "message": "プレミアム待機リストに参加ありがとうございます。限定アップデートで近日ご連絡いたします。",
+      "checkEmail": "確認メールをメールでご確認ください。",
+      "addAnother": "別のメールを追加"
+    }
+  }
+}

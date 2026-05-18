@@ -1,0 +1,56 @@
+{
+  "Marketplace": "Marketplace",
+  "Create Agent": "Create Agent",
+  "Portfolio": "Portfolio",
+  "Learn": "Learn",
+  "waitlist": {
+    "title": "Unlock the Future of",
+    "subtitle": "AI Agents",
+    "description": "Join the exclusive premium waitlist and be among the first to experience the next generation of AI agent creation and interaction.",
+    "limitedSpots": "LIMITED SPOTS AVAILABLE",
+    "peopleWaiting": "2,847+ waiting",
+    "earlyAccess": "Early access coming soon",
+    "reserveSpot": "Reserve Your Spot",
+    "reserveDescription": "Enter your email to join the premium waitlist and get exclusive early access.",
+    "emailPlaceholder": "Enter your email address",
+    "joinButton": "Join Premium Waitlist",
+    "joining": "Joining...",
+    "noSpam": "No spam, ever. Unsubscribe at any time.",
+    "premiumBenefits": "Premium Benefits",
+    "benefits": {
+      "earlyAccess": {
+        "title": "Early Access",
+        "description": "Be the first to experience premium AI agent features before anyone else."
+      },
+      "exclusiveDiscounts": {
+        "title": "Exclusive Discounts",
+        "description": "Get lifetime discounts on premium subscriptions and agent marketplace fees."
+      },
+      "prioritySupport": {
+        "title": "Priority Support",
+        "description": "Receive dedicated support with faster response times and personalized assistance."
+      },
+      "betaFeatures": {
+        "title": "Beta Features",
+        "description": "Access cutting-edge features and participate in shaping the future of AI agents."
+      },
+      "communityAccess": {
+        "title": "Community Access",
+        "description": "Join an exclusive community of premium users and AI agent creators."
+      },
+      "enhancedAnalytics": {
+        "title": "Enhanced Analytics",
+        "description": "Get advanced insights and analytics for your AI agent performance."
+      }
+    },
+    "readyTitle": "Ready to Transform Your AI Experience?",
+    "readyDescription": "Don't miss your chance to be at the forefront of AI agent innovation.",
+    "joinNowButton": "Join the Waitlist Now",
+    "success": {
+      "title": "You're on the list!",
+      "message": "Thank you for joining the premium waitlist. We'll be in touch soon with exclusive updates.",
+      "checkEmail": "Check your email for a confirmation message.",
+      "addAnother": "Add Another Email"
+    }
+  }
+}
