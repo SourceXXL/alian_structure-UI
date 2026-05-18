@@ -107,7 +107,7 @@ export default function PWAInstall({ className = '' }: PWAInstallProps) {
                 </div>
               </div>
               <div className="flex-1">
-                <h3 className="text-sm font-semibold mb-1">Install stellAIverse</h3>
+                <h3 className="text-sm font-semibold mb-1">Install Alian-Structure</h3>
                 <p className="text-xs opacity-90 mb-3">
                   Get the full experience with offline access and faster performance
                 </p>
@@ -154,7 +154,7 @@ export default function PWAInstall({ className = '' }: PWAInstallProps) {
               <div className="flex-1">
                 <h3 className="text-sm font-semibold mb-1">Update Available</h3>
                 <p className="text-xs opacity-90 mb-3">
-                  A new version of stellAIverse is ready to install
+                  A new version of Alian-Structure is ready to install
                 </p>
                 <div className="flex space-x-2">
                   <button

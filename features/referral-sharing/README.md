@@ -1,6 +1,6 @@
 # Referral Sharing Feature
 
-A comprehensive referral sharing system for the stellAIverse platform that enables users to generate referral links, share them across social media, track performance, and earn rewards.
+A comprehensive referral sharing system for the Alian-Structure platform that enables users to generate referral links, share them across social media, track performance, and earn rewards.
 
 ## Features
 
@@ -117,7 +117,7 @@ NEXT_PUBLIC_API_URL=http://localhost:3001
 ```
 
 ### Styling
-The components use Tailwind CSS classes and follow the existing cosmic theme of the stellAIverse platform.
+The components use Tailwind CSS classes and follow the existing cosmic theme of the Alian-Structure platform.
 
 ## Testing
 

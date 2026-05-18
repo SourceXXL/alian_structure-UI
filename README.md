@@ -1,8 +1,8 @@
-# stellAIverse-frontend
+# Alian-Structure-frontend
 
 ## Overview
 
-**stellAIverse** is a beautiful, immersive web application that transforms how you create and interact with AI agents. Built with Next.js and Tailwind CSS, it features a stunning cosmic interface with a galaxy-style marketplace where you can browse, create, and deploy intelligent AI agents. Whether you're building custom agents to automate tasks, exploring community-created agents, or learning best practices in agent development, stellAIverse provides an intuitive platform with a visual experience that feels like exploring the stars.
+**Alian-Structure** is a beautiful, immersive web application that transforms how you create and interact with AI agents. Built with Next.js and Tailwind CSS, it features a stunning cosmic interface with a galaxy-style marketplace where you can browse, create, and deploy intelligent AI agents. Whether you're building custom agents to automate tasks, exploring community-created agents, or learning best practices in agent development, Alian-Structure provides an intuitive platform with a visual experience that feels like exploring the stars.
 
 The platform combines a powerful **agent creation wizard** (describe behavior → auto-generate basic contract + metadata), an interactive **chat interface** for agent interaction, a **portfolio dashboard** with performance stats, and an **educational mode** with tutorials on building smarter agents—all wrapped in a captivating cosmic UI theme with dark space backgrounds, glowing nebulae, and animated star constellations.
 
@@ -31,8 +31,8 @@ The platform combines a powerful **agent creation wizard** (describe behavior �
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/StellAIverse/stellAIverse-frontend.git
-cd stellAIverse-frontend
+git clone https://github.com/Alian-Structure/Alian-Structure-frontend.git
+cd Alian-Structure-frontend
 ```
 
 ### 2. Install Dependencies
@@ -106,7 +106,7 @@ If running with a local backend, ensure:
 ## Project Structure
 
 ```
-stellAIverse-frontend/
+Alian-Structure-frontend/
 ├── app/                    # Next.js app directory
 ├── components/             # React components
 ├── lib/                    # Utility functions and helpers
@@ -122,8 +122,8 @@ stellAIverse-frontend/
 - **[PWA Implementation Guide](./docs/PWA_IMPLEMENTATION.md)** - Progressive Web App features and caching strategies
 - **[Metrics dashboard](./docs/metrics-dashboard.md)** - Prometheus/OpenTelemetry integration and PII policy
 - **[Contributing Guidelines](./CONTRIBUTING.md)** - How to contribute to the project
-- **[Issues](https://github.com/StellAIverse/stellAIverse-frontend/issues)** - Report bugs or request features
-- **[Discussions](https://github.com/StellAIverse/stellAIverse-frontend/discussions)** - Community discussions
+- **[Issues](https://github.com/Alian-Structure/Alian-Structure-frontend/issues)** - Report bugs or request features
+- **[Discussions](https://github.com/Alian-Structure/Alian-Structure-frontend/discussions)** - Community discussions
 - **[Next.js Documentation](https://nextjs.org/docs)** - Learn about Next.js
 - **[Tailwind CSS Documentation](https://tailwindcss.com/docs)** - Style reference
 

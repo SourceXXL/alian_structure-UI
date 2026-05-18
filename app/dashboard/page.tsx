@@ -99,7 +99,7 @@ export default function MetricsDashboardPage() {
             Analytics Dashboard
           </Typography>
           <Typography variant="body1" sx={{ color: 'text.secondary', mb: 1, maxWidth: '800px' }}>
-            Real-time insights from the stellAIverse engine. Monitor performance and business metrics with cosmic precision.
+            Real-time insights from the Alian-Structure engine. Monitor performance and business metrics with cosmic precision.
           </Typography>
           <Typography variant="caption" sx={{ color: 'text.disabled', display: 'block' }}>
             Source: <span style={{ color: alpha(theme.palette.text.primary, 0.7), fontWeight: 600 }}>{source}</span>

@@ -2,7 +2,7 @@
 
 ## Overview
 
-A production-ready affiliate dashboard for stellAIverse that enables affiliates to manage referrals, track commissions, and request payouts. Built following project patterns and best practices.
+A production-ready affiliate dashboard for Alian-Structure that enables affiliates to manage referrals, track commissions, and request payouts. Built following project patterns and best practices.
 
 ## What Was Delivered
 

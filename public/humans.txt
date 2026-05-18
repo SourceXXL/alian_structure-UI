@@ -1,14 +1,14 @@
 /* HUMANS.TXT */
     
-    STELLAIVERSE - AI Agent Marketplace
-    Website: https://stellaiverse.com
-    Twitter: @stellAIverse
+    Alian-Structure - AI Agent Marketplace
+    Website: https://Alian-Structure.com
+    Twitter: @Alian-Structure
     Location: Global
     
     /* TEAM */
     
     Lead Developer: Oseji Fabian
-    Contact: fabian@stellaiverse.com
+    Contact: fabian@Alian-Structure.com
     
     /* THANKS */
     

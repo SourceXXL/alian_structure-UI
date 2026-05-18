@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Agent telemetry | stellAIverse',
+  title: 'Agent telemetry | Alian-Structure',
   description: 'Live agent telemetry with WebSocket streaming, filters, and role-based visibility.',
 };
 

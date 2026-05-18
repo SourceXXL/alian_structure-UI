@@ -79,8 +79,8 @@ describe('PWA Functionality', () => {
   describe('Manifest Validation', () => {
     it('should have valid manifest structure', () => {
       const manifest = {
-        name: 'stellAIverse',
-        short_name: 'stellAIverse',
+        name: 'Alian-Structure',
+        short_name: 'Alian-Structure',
         theme_color: '#1a1a2e',
         background_color: '#0f0f23',
         display: 'standalone',
@@ -101,7 +101,7 @@ describe('PWA Functionality', () => {
         ],
       };
 
-      expect(manifest.name).toBe('stellAIverse');
+      expect(manifest.name).toBe('Alian-Structure');
       expect(manifest.display).toBe('standalone');
       expect(manifest.icons).toHaveLength(8);
     });
@@ -149,8 +149,8 @@ describe('PWA Functionality', () => {
     it('should validate manifest fields', () => {
       const requiredFields = ['name', 'short_name', 'start_url', 'display'];
       const manifest = {
-        name: 'stellAIverse',
-        short_name: 'stellAIverse',
+        name: 'Alian-Structure',
+        short_name: 'Alian-Structure',
         start_url: '/',
         display: 'standalone',
       };

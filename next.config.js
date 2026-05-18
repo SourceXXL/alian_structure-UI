@@ -18,7 +18,7 @@ const nextConfig = {
         urlPattern: /^https?.*\/api\/.*$/,
         handler: 'NetworkFirst',
         options: {
-          cacheName: 'stellaiverse-api',
+          cacheName: 'Alian-Structure-api',
           expiration: {
             maxEntries: 100,
             maxAgeSeconds: 60 * 60 * 24, // 24 hours
@@ -38,7 +38,7 @@ const nextConfig = {
         urlPattern: /\.(?:js|css|html|json)$/,
         handler: 'StaleWhileRevalidate',
         options: {
-          cacheName: 'stellaiverse-static',
+          cacheName: 'Alian-Structure-static',
           expiration: {
             maxEntries: 200,
             maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
@@ -56,7 +56,7 @@ const nextConfig = {
         urlPattern: /\.(?:png|jpg|jpeg|svg|gif|webp|ico|avif)$/,
         handler: 'CacheFirst',
         options: {
-          cacheName: 'stellaiverse-images',
+          cacheName: 'Alian-Structure-images',
           expiration: {
             maxEntries: 500,
             maxAgeSeconds: 60 * 60 * 24 * 90, // 90 days
@@ -74,7 +74,7 @@ const nextConfig = {
         urlPattern: /\.(?:woff|woff2|ttf|eot)$/,
         handler: 'CacheFirst',
         options: {
-          cacheName: 'stellaiverse-fonts',
+          cacheName: 'Alian-Structure-fonts',
           expiration: {
             maxEntries: 50,
             maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
@@ -92,7 +92,7 @@ const nextConfig = {
         urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/,
         handler: 'StaleWhileRevalidate',
         options: {
-          cacheName: 'stellaiverse-google-fonts-stylesheets',
+          cacheName: 'Alian-Structure-google-fonts-stylesheets',
           expiration: {
             maxEntries: 10,
             maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
@@ -106,7 +106,7 @@ const nextConfig = {
         urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/,
         handler: 'CacheFirst',
         options: {
-          cacheName: 'stellaiverse-google-fonts-webfonts',
+          cacheName: 'Alian-Structure-google-fonts-webfonts',
           expiration: {
             maxEntries: 50,
             maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year

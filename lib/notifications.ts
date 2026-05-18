@@ -67,7 +67,7 @@ export class NotificationManager {
 
   private async loadPreferences(): Promise<void> {
     try {
-      const stored = localStorage.getItem('stellAIverse-notification-preferences');
+      const stored = localStorage.getItem('Alian-Structure-notification-preferences');
       if (stored) {
         this.preferences = { ...this.preferences, ...JSON.parse(stored) };
       }
@@ -78,7 +78,7 @@ export class NotificationManager {
 
   private savePreferences(): void {
     try {
-      localStorage.setItem('stellAIverse-notification-preferences', JSON.stringify(this.preferences));
+      localStorage.setItem('Alian-Structure-notification-preferences', JSON.stringify(this.preferences));
     } catch (error) {
       console.warn('Failed to save notification preferences:', error);
     }
@@ -190,7 +190,7 @@ export class NotificationManager {
         body: data.body,
         icon: data.icon || '/icons/icon-192x192.png',
         badge: data.badge || '/icons/icon-192x192.png',
-        tag: data.tag || 'stellAIverse',
+        tag: data.tag || 'Alian-Structure',
         requireInteraction: data.requireInteraction || false,
         silent: !this.preferences.soundEnabled,
         vibrate: this.preferences.vibrationEnabled ? [100, 50, 100] : undefined,
@@ -211,7 +211,7 @@ export class NotificationManager {
           body: data.body,
           icon: data.icon || '/icons/icon-192x192.png',
           badge: data.badge || '/icons/icon-192x192.png',
-          tag: data.tag || 'stellAIverse',
+          tag: data.tag || 'Alian-Structure',
           requireInteraction: data.requireInteraction || false,
           silent: !this.preferences.soundEnabled,
           vibrate: this.preferences.vibrationEnabled ? [100, 50, 100] : undefined,

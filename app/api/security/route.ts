@@ -127,7 +127,7 @@ export async function POST(request: NextRequest) {
 
 export async function GET() {
   return NextResponse.json({
-    service: "StellAIverse Security Scanner",
+    service: "Alian-Structure Security Scanner",
     version: "1.0.0",
     actions: ["scan", "export", "record-audit", "audit-history"],
     supported_networks: ["mainnet", "testnet", "futurenet"],

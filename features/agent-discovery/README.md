@@ -1,6 +1,6 @@
 # Agent Discovery System
 
-This directory contains the implementation of the Agent Discovery System for the stellAIverse application.
+This directory contains the implementation of the Agent Discovery System for the Alian-Structure application.
 
 ## Features
 - Full-text search across agent names, descriptions, and capabilities.

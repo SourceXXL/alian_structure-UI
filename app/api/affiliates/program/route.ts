@@ -10,7 +10,7 @@ export async function GET(request: NextRequest) {
     // For now, return mock data
     const program = {
       id: 'prog-001',
-      name: 'stellAIverse Affiliate Program',
+      name: 'Alian-Structure Affiliate Program',
       status: 'active',
       commissionStructure: {
         direct: 10,
