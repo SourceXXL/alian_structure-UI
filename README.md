@@ -2,7 +2,7 @@
 
 ## Overview
 
-**stellAIverse** is a beautiful, immersive web application that transforms how you create and interact with AI agents. Built with Next.js and Tailwind CSS, it features a stunning cosmic interface with a galaxy-style marketplace where you can browse, create, and deploy intelligent AI agents. Whether you're building custom agents to automate tasks, exploring community-created agents, or learning best practices in agent development, stellAIverse provides an intuitive platform with a visual experience that feels like exploring the stars.
+**Alian_Structure** is a beautiful, immersive web application that transforms how you create and interact with AI agents. Built with Next.js and Tailwind CSS, it features a stunning cosmic interface with a galaxy-style marketplace where you can browse, create, and deploy intelligent AI agents. Whether you're building custom agents to automate tasks, exploring community-created agents, or learning best practices in agent development, stellAIverse provides an intuitive platform with a visual experience that feels like exploring the stars.
 
 The platform combines a powerful **agent creation wizard** (describe behavior → auto-generate basic contract + metadata), an interactive **chat interface** for agent interaction, a **portfolio dashboard** with performance stats, and an **educational mode** with tutorials on building smarter agents—all wrapped in a captivating cosmic UI theme with dark space backgrounds, glowing nebulae, and animated star constellations.
 
