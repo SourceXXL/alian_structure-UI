@@ -6,7 +6,6 @@ import QueryProvider from '@/components/providers/QueryProvider';
 import ReduxProvider from '@/components/providers/ReduxProvider';
 import Navigation from '@/components/Navigation';
 import PWAInstall from '@/components/PWAInstall';
-import ReduxProvider from '@/components/providers/ReduxProvider';
 import { Toaster } from 'sonner';
 import '@/lib/i18n';
 
