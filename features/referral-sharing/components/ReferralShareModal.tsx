@@ -171,7 +171,7 @@ const ReferralShareModal: React.FC<ReferralShareModalProps> = ({
                   { icon: FacebookIcon, platform: 'facebook', label: 'Facebook', color: '#1877F2' },
                   { icon: WhatsAppIcon, platform: 'whatsapp', label: 'WhatsApp', color: '#25D366' }
                 ].map((s) => (
-                  <Grid item xs={4} key={s.platform}>
+                  <Grid size={4} key={s.platform}>
                     <Box 
                       onClick={() => shareOnSocial(s.platform)}
                       sx={{ 

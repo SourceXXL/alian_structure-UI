@@ -123,7 +123,7 @@ const ReferralDashboard: React.FC<ReferralDashboardProps> = ({ userId }) => {
           { label: 'Total Earnings', value: `${stats?.totalRewards || 0} XLM`, icon: WalletIcon, color: '#F59E0B' },
           { label: 'Conversion Orbit', value: `${((stats?.conversionRate || 0) * 100).toFixed(1)}%`, icon: RocketIcon, color: '#8B5CF6' }
         ].map((stat, i) => (
-          <Grid item xs={12} sm={6} md={3} key={i}>
+          <Grid size={{ xs: 12, sm: 6, md: 3 }} key={i}>
             <Paper
               elevation={0}
               sx={{
@@ -206,7 +206,7 @@ const ReferralDashboard: React.FC<ReferralDashboardProps> = ({ userId }) => {
           {activeTab === 1 && (
             <Grid container spacing={3}>
               {links.length === 0 ? (
-                <Grid item xs={12}>
+            <Grid size={12}>
                   <Box sx={{ textAlign: 'center', py: 8 }}>
                     <Typography sx={{ color: 'text.secondary', mb: 3 }}>No transmission links found in this sector.</Typography>
                     <Button variant="outlined" onClick={() => setShowShareModal(true)}>Initiate Link</Button>
@@ -214,7 +214,7 @@ const ReferralDashboard: React.FC<ReferralDashboardProps> = ({ userId }) => {
                 </Grid>
               ) : (
                 links.map((link) => (
-                  <Grid item xs={12} key={link.id}>
+                  <Grid size={12} key={link.id}>
                     <Paper sx={{ p: 3, borderRadius: '16px', backgroundColor: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.05)' }}>
                       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start' }}>
                         <Box>
