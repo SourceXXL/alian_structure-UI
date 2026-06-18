@@ -64,7 +64,7 @@ export default function Portfolio() {
 
           {/* Trading Bonuses Feature */}
           <BonusDashboard />
-        </div>
+        </Box>
 
         <Box sx={{ mt: 8 }}>
           <Typography variant="h5" sx={{ fontWeight: 700, mb: 4, display: 'flex', alignItems: 'center', gap: 2 }}>

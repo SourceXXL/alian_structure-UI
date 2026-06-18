@@ -21,7 +21,7 @@ beforeEach(() => {
     value: mockPerformance,
     writable: true,
   });
-  window.requestAnimationFrame = mockRequestAnimationFrame;
+  (window as any).requestAnimationFrame = mockRequestAnimationFrame;
   window.cancelAnimationFrame = mockCancelAnimationFrame;
   jest.useFakeTimers();
 });

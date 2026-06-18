@@ -16,7 +16,7 @@ export default function ThemeToggle() {
         aria-label={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
         aria-pressed={isDark}
         size="small"
-        sx={(theme) => ({
+        sx={(theme: any) => ({
           width: 40,
           height: 40,
           color: theme.palette.text.primary,

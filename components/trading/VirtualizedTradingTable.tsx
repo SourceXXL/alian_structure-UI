@@ -3,10 +3,9 @@
 import React, { useMemo, useCallback } from 'react';
 import { FixedSizeList as List } from 'react-window';
 import { useDebounce } from 'use-debounce';
-import { TradingDataPoint } from './OptimizedTradingChart';
 
 interface VirtualizedTradingTableProps {
-  data: TradingDataPoint[];
+  data: any[];
   height?: number;
   rowHeight?: number;
   debounceMs?: number;
@@ -16,37 +15,37 @@ interface VirtualizedTradingTableProps {
 interface RowProps {
   index: number;
   style: React.CSSProperties;
-  data: TradingDataPoint[];
+  data: any[];
 }
 
 // Memoized cell formatters
 const formatCell = {
-  timestamp: React.memo((timestamp: number) => {
+  timestamp: (timestamp: number) => {
     const date = new Date(timestamp);
     return date.toLocaleString();
-  }),
-  
-  price: React.memo((price: number) => {
+  },
+
+  price: (price: number) => {
     return new Intl.NumberFormat('en-US', {
       style: 'currency',
       currency: 'USD',
       minimumFractionDigits: 2,
       maximumFractionDigits: 6,
     }).format(price);
-  }),
-  
-  volume: React.memo((volume: number) => {
+  },
+
+  volume: (volume: number) => {
     if (volume >= 1000000) {
       return `${(volume / 1000000).toFixed(2)}M`;
     } else if (volume >= 1000) {
       return `${(volume / 1000).toFixed(2)}K`;
     }
     return volume.toFixed(0);
-  }),
+  },
   
-  change: React.memo((open: number, close: number) => {
+  change: (open: number, close: number) => {
     const change = close - open;
-    const changePercent = (change / open) * 100;
+    const changePercent = (change / (open || 1)) * 100;
     const isPositive = change >= 0;
     
     return (
@@ -54,8 +53,11 @@ const formatCell = {
         {isPositive ? '+' : ''}{change.toFixed(4)} ({isPositive ? '+' : ''}{changePercent.toFixed(2)}%)
       </span>
     );
-  }),
+  },
 };
+
+// Name memoized cell components for eslint/React rules
+// formatCell helper functions are plain functions now
 
 // Memoized row component
 const TableRow = React.memo<RowProps>(({ index, style, data }) => {

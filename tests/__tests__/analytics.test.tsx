@@ -48,12 +48,10 @@ describe("Analytics Dashboard", () => {
   const mockFetch = jest.fn();
   global.fetch = mockFetch;
   if (!URL.createObjectURL) {
-    // @ts-expect-error - jsdom may not implement this
-    URL.createObjectURL = () => "blob:mock";
+    (URL as any).createObjectURL = () => "blob:mock";
   }
   if (!URL.revokeObjectURL) {
-    // @ts-expect-error - jsdom may not implement this
-    URL.revokeObjectURL = () => {};
+    (URL as any).revokeObjectURL = () => {};
   }
 
   const anchorClickSpy = jest.spyOn(HTMLAnchorElement.prototype, "click").mockImplementation(() => {});

@@ -133,7 +133,7 @@ export default function AffiliateDashboardPage() {
           <PayoutHistory
             payouts={payoutRequests}
             isLoading={isLoading}
-            onRequestPayout={requestPayout}
+            onRequestPayout={(amount: string) => { void requestPayout(amount, walletAddress || ''); }}
             pendingEarnings={stats?.pendingEarnings || '0.00'}
             minimumPayout={program?.minimumPayout || '100.00'}
           />

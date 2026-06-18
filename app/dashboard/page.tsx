@@ -133,7 +133,7 @@ export default function MetricsDashboardPage() {
                 <Select
                   value={effectivePanelId}
                   label="Panel"
-                  onChange={(e) => setPanelId(e.target.value)}
+                  onChange={(e: any) => setPanelId(e.target.value)}
                   sx={{ backgroundColor: 'rgba(255,255,255,0.03)' }}
                 >
                   {filteredPanels.map((p) => (
@@ -148,7 +148,7 @@ export default function MetricsDashboardPage() {
                 <Select
                   value={range}
                   label="Range"
-                  onChange={(e) => setRange(e.target.value as MetricsRange)}
+                  onChange={(e: any) => setRange(e.target.value as MetricsRange)}
                   sx={{ backgroundColor: 'rgba(255,255,255,0.03)' }}
                 >
                   {RANGES.map((r) => (
@@ -158,13 +158,13 @@ export default function MetricsDashboardPage() {
               </FormControl>
             </Grid>
             <Grid item xs={6} sm={3} md={4}>
-              <TextField
+                <TextField
                 fullWidth
                 size="small"
                 label="Step (s)"
                 type="number"
                 value={step}
-                onChange={(e) => setStep(Number(e.target.value || 30))}
+                onChange={(e: any) => setStep(Number(e.target.value || 30))}
                 InputProps={{ inputProps: { min: 5, max: 300 } }}
                 sx={{ backgroundColor: 'rgba(255,255,255,0.03)' }}
               />
@@ -202,7 +202,7 @@ export default function MetricsDashboardPage() {
                 size="small"
                 placeholder="Filter series (e.g. job=api)"
                 value={seriesFilter}
-                onChange={(e) => setSeriesFilter(e.target.value)}
+                onChange={(e: any) => setSeriesFilter(e.target.value)}
                 sx={{ 
                   maxWidth: '400px',
                   backgroundColor: 'rgba(255,255,255,0.03)',

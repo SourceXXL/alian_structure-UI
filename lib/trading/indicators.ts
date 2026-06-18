@@ -295,7 +295,7 @@ export function calculateIndicators(
   if (options.ema?.enabled) {
     const emaValues = calculateEMA(prices, options.ema.period);
     emaValues.forEach((value, index) => {
-      const dataIndex = index + options.ema.period - 1;
+      const dataIndex = index + options.ema!.period - 1;
       if (result[dataIndex]) {
         result[dataIndex].ema = value;
       }
@@ -306,7 +306,7 @@ export function calculateIndicators(
   if (options.rsi?.enabled) {
     const rsiValues = calculateRSI(prices, options.rsi.period);
     rsiValues.forEach((value, index) => {
-      const dataIndex = index + options.rsi.period;
+      const dataIndex = index + options.rsi!.period;
       if (result[dataIndex]) {
         result[dataIndex].rsi = value;
       }
@@ -317,7 +317,7 @@ export function calculateIndicators(
   if (options.macd?.enabled) {
     const macdData = calculateMACD(prices, options.macd.fastPeriod, options.macd.slowPeriod, options.macd.signalPeriod);
     macdData.macd.forEach((value, index) => {
-      const dataIndex = index + options.macd.slowPeriod + options.macd.signalPeriod - 2;
+      const dataIndex = index + options.macd!.slowPeriod + options.macd!.signalPeriod - 2;
       if (result[dataIndex]) {
         result[dataIndex].macd = {
           macd: value,
@@ -332,7 +332,7 @@ export function calculateIndicators(
   if (options.bollingerBands?.enabled) {
     const bbData = calculateBollingerBands(prices, options.bollingerBands.period, options.bollingerBands.standardDeviations);
     bbData.upper.forEach((value, index) => {
-      const dataIndex = index + options.bollingerBands.period - 1;
+      const dataIndex = index + options.bollingerBands!.period - 1;
       if (result[dataIndex]) {
         result[dataIndex].bollingerBands = {
           upper: value,
@@ -349,7 +349,7 @@ export function calculateIndicators(
     const lows = data.map(d => d.low);
     const stochasticData = calculateStochastic(highs, lows, prices, options.stochastic.kPeriod, options.stochastic.dPeriod);
     stochasticData.k.forEach((value, index) => {
-      const dataIndex = index + options.stochastic.kPeriod - 1;
+      const dataIndex = index + options.stochastic!.kPeriod - 1;
       if (result[dataIndex]) {
         result[dataIndex].stochastic = {
           k: value,
@@ -365,7 +365,7 @@ export function calculateIndicators(
     const lows = data.map(d => d.low);
     const williamsRValues = calculateWilliamsR(highs, lows, prices, options.williamsR.period);
     williamsRValues.forEach((value, index) => {
-      const dataIndex = index + options.williamsR.period - 1;
+      const dataIndex = index + options.williamsR!.period - 1;
       if (result[dataIndex]) {
         result[dataIndex].williamsR = value;
       }
@@ -378,7 +378,7 @@ export function calculateIndicators(
     const lows = data.map(d => d.low);
     const cciValues = calculateCCI(highs, lows, prices, options.cci.period);
     cciValues.forEach((value, index) => {
-      const dataIndex = index + options.cci.period - 1;
+      const dataIndex = index + options.cci!.period - 1;
       if (result[dataIndex]) {
         result[dataIndex].cci = value;
       }
