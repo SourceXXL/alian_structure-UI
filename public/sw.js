@@ -814,9 +814,9 @@ async function getCacheStats() {
 // Clear all caches
 async function clearAllCaches() {
   const cacheNames = await caches.keys();
-  const Alian-StructureCaches = cacheNames.filter(name => name.startsWith('Alian-Structure-'));
+  const alianStructureCaches = cacheNames.filter(name => name.startsWith('Alian-Structure-'));
   
-  await Promise.all(Alian-StructureCaches.map(name => caches.delete(name)));
+  await Promise.all(alianStructureCaches.map(name => caches.delete(name)));
   console.log('[SW] All caches cleared');
 }
 

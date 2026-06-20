@@ -83,7 +83,7 @@ export default function PWAInstall({ className = '' }: PWAInstallProps) {
               </svg>
             </div>
             <div className="flex-1">
-              <p className="text-sm font-medium">You're offline</p>
+              <p className="text-sm font-medium">You&apos;re offline</p>
               <p className="text-xs opacity-90">Some features may not be available</p>
             </div>
           </div>

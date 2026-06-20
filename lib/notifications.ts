@@ -136,7 +136,8 @@ export class NotificationManager {
       const registration = await navigator.serviceWorker.ready;
       this.subscription = await registration.pushManager.subscribe({
         userVisibleOnly: true,
-        applicationServerKey: this.urlBase64ToUint8Array(process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY || '')
+        // Cast to any/ArrayBuffer for compatibility with different TS DOM libs
+        applicationServerKey: this.urlBase64ToUint8Array(process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY || '').buffer as any
       });
 
       return this.subscription;
@@ -201,7 +202,7 @@ export class NotificationManager {
         actions: data.actions || []
       };
 
-      await registration.showNotification(data.title, notificationData);
+      await registration.showNotification(data.title, notificationData as any);
     } catch (error) {
       console.error('Failed to show notification:', error);
       
@@ -214,9 +215,10 @@ export class NotificationManager {
           tag: data.tag || 'Alian-Structure',
           requireInteraction: data.requireInteraction || false,
           silent: !this.preferences.soundEnabled,
-          vibrate: this.preferences.vibrationEnabled ? [100, 50, 100] : undefined,
+          // Vibrate may not exist on all Notification typings; coerce for compatibility
+          vibrate: (this.preferences.vibrationEnabled ? [100, 50, 100] : undefined) as any,
           data: data.data
-        });
+        } as any);
       }
     }
   }

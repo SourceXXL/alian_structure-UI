@@ -68,7 +68,7 @@ export default function CreateAgent() {
             Forge AI Agent
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-            Step {step} of 4: Define your agent's cosmic essence
+            Step {step} of 4: Define your agent&apos;s cosmic essence
           </Typography>
         </Box>
 

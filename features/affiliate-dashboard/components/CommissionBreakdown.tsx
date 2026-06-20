@@ -70,7 +70,7 @@ export const CommissionBreakdown: React.FC<CommissionBreakdownProps> = ({ data, 
                 borderRadius: '8px',
               }}
               labelStyle={{ color: 'rgb(139, 92, 246)' }}
-              formatter={(value) => `${value.toFixed(2)} XLM`}
+              formatter={(value) => `${Number(value).toFixed(2)} XLM`}
             />
           </PieChart>
         </ResponsiveContainer>

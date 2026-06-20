@@ -255,7 +255,7 @@ export const BugReportForm: React.FC<BugReportFormProps> = ({
                 <p className="mt-1 text-sm text-red-400">{errors.reporterEmail}</p>
               )}
               <p className="mt-2 text-sm text-gray-400">
-                Provide your email if you'd like updates about your bug report
+                Provide your email if you&apos;d like updates about your bug report
               </p>
             </div>
           </div>

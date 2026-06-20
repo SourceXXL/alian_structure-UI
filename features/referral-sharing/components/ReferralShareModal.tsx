@@ -35,6 +35,7 @@ interface ReferralShareModalProps {
   isOpen: boolean;
   onClose: () => void;
   userId: string;
+  onGenerate?: () => void;
 }
 
 const ReferralShareModal: React.FC<ReferralShareModalProps> = ({

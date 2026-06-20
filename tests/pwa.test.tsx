@@ -8,14 +8,17 @@ import { usePWA } from '@/hooks/usePWA';
 import PWAInstall from '@/components/PWAInstall';
 
 // Mock service worker
-global.navigator.serviceWorker = {
-  register: jest.fn(() => Promise.resolve()),
-  ready: Promise.resolve({
-    active: {
-      postMessage: jest.fn(),
-    },
-  }),
-} as any;
+Object.defineProperty(global.navigator, 'serviceWorker', {
+  value: {
+    register: jest.fn(() => Promise.resolve()),
+    ready: Promise.resolve({
+      active: {
+        postMessage: jest.fn(),
+      },
+    }),
+  },
+  writable: true,
+});
 
 // Mock beforeinstallprompt event
 global.addEventListener = jest.fn();
@@ -170,7 +173,7 @@ describe('PWA Integration', () => {
     
     // 1. Register service worker
     // 2. Cache some assets
-    3. Go offline
+    // 3. Go offline
     // 4. Verify cached content loads
     // 5. Go back online
     // 6. Verify update flow

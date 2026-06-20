@@ -65,7 +65,7 @@ export default function NotificationSettingsPage() {
                 <strong>Notifications not showing?</strong> Check your browser settings and ensure notifications are allowed for this site.
               </p>
               <p>
-                <strong>Push not working?</strong> Make sure your browser supports push notifications and you're online.
+                <strong>Push not working?</strong> Make sure your browser supports push notifications and you&apos;re online.
               </p>
               <p>
                 <strong>Still having issues?</strong> Try refreshing the page or restarting your browser.

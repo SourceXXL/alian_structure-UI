@@ -171,7 +171,7 @@ const ReferralDashboard: React.FC<ReferralDashboardProps> = ({ userId }) => {
       >
         <Tabs 
           value={activeTab} 
-          onChange={(_, v) => setActiveTab(v)}
+          onChange={(_: any, v: any) => setActiveTab(v)}
           sx={{
             borderBottom: '1px solid rgba(255,255,255,0.1)',
             px: 2,

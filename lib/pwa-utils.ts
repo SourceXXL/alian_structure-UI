@@ -217,7 +217,7 @@ class PWAManager {
     rtt?: number;
     saveData?: boolean;
   } {
-    if (typeof window === 'undefined' || !navigator.connection) {
+    if (typeof window === 'undefined' || !(navigator as any).connection) {
       return { online: navigator.onLine };
     }
 
@@ -253,7 +253,7 @@ class PWAManager {
     });
 
     // Listen for connection quality changes
-    if (navigator.connection) {
+    if ((navigator as any).connection) {
       const connection = (navigator as any).connection;
       connection.addEventListener('change', () => {
         const event = new CustomEvent('connection-quality-change', {
@@ -289,9 +289,10 @@ class PWAManager {
         await new Notification(title, {
           icon: '/icons/icon-192x192.png',
           badge: '/icons/icon-192x192.png',
-          vibrate: [100, 50, 100],
+          // Cast vibrate for broader compatibility with lib defs
+          vibrate: [100, 50, 100] as any,
           ...options,
-        });
+        } as any);
       } catch (error) {
         console.error('[PWA] Error showing notification:', error);
       }

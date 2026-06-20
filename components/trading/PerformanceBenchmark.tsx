@@ -16,8 +16,8 @@ interface PerformanceBenchmarkProps {
   onBenchmarkComplete?: (metrics: BenchmarkMetrics[]) => void;
 }
 
-// Generate mock trading data
-const generateTradingData = useCallback((count: number): TradingDataPoint[] => {
+// Generate mock trading data (pure function)
+function generateTradingData(count: number): TradingDataPoint[] {
   const data: TradingDataPoint[] = [];
   let basePrice = 100;
   const now = Date.now();
@@ -46,7 +46,7 @@ const generateTradingData = useCallback((count: number): TradingDataPoint[] => {
   }
   
   return data;
-}, []);
+}
 
 const PerformanceBenchmark: React.FC<PerformanceBenchmarkProps> = React.memo(({ onBenchmarkComplete }) => {
   const [isRunning, setIsRunning] = useState(false);

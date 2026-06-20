@@ -91,16 +91,16 @@ const BugReportPage = () => {
               
               <div className="space-y-4 text-gray-300">
                 <p>
-                  Our development team will review your bug report shortly. You'll receive updates via email if you provided your contact information.
+                  Our development team will review your bug report shortly. You&apos;ll receive updates via email if you provided your contact information.
                 </p>
                 
                 <div className="bg-cosmic-purple/20 rounded-lg p-4 mt-6">
                   <h3 className="font-medium text-cosmic-blue mb-2">What happens next?</h3>
                   <ul className="text-sm space-y-2 text-left">
                     <li>• Your report will be reviewed by our team</li>
-                    <li>• We'll assess the bug and determine the reward amount</li>
+                    <li>• We&apos;ll assess the bug and determine the reward amount</li>
                     <li>• If approved, rewards will be paid within 7 days</li>
-                    <li>• You'll receive email updates on the status</li>
+                    <li>• You&apos;ll receive email updates on the status</li>
                   </ul>
                 </div>
               </div>
