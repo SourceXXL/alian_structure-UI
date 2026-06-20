@@ -112,7 +112,7 @@ export default function Portfolio() {
                 </Box>
 
                 <Grid container spacing={4} alignItems="center">
-                  <Grid item xs={6} sm={3}>
+                <Grid size={{ xs: 6, sm: 3 }}>
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
                       <Box sx={{ p: 1, borderRadius: '12px', backgroundColor: 'rgba(139, 92, 246, 0.1)' }}>
                         <PerformanceIcon sx={{ color: 'primary.main', fontSize: 20 }} />
@@ -123,7 +123,7 @@ export default function Portfolio() {
                       </Box>
                     </Box>
                   </Grid>
-                  <Grid item xs={6} sm={3}>
+                  <Grid size={{ xs: 6, sm: 3 }}>
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
                       <Box sx={{ p: 1, borderRadius: '12px', backgroundColor: 'rgba(6, 182, 212, 0.1)' }}>
                         <InteractionIcon sx={{ color: '#06b6d4', fontSize: 20 }} />
@@ -134,7 +134,7 @@ export default function Portfolio() {
                       </Box>
                     </Box>
                   </Grid>
-                  <Grid item xs={12} sm={6}>
+                  <Grid size={{ xs: 12, sm: 6 }}>
                     <Box className="flex gap-3">
                       <Button 
                         fullWidth 

@@ -127,7 +127,7 @@ export default function MetricsDashboardPage() {
           <Box className="hidden md:block h-8 w-px bg-white/10" />
 
           <Grid container spacing={2} sx={{ flex: 1 }}>
-            <Grid item xs={12} sm={6} md={4}>
+          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
               <FormControl fullWidth size="small">
                 <InputLabel sx={{ color: 'gray' }}>Panel</InputLabel>
                 <Select
@@ -142,7 +142,7 @@ export default function MetricsDashboardPage() {
                 </Select>
               </FormControl>
             </Grid>
-            <Grid item xs={6} sm={3} md={4}>
+            <Grid size={{ xs: 6, sm: 3, md: 4 }}>
               <FormControl fullWidth size="small">
                 <InputLabel sx={{ color: 'gray' }}>Range</InputLabel>
                 <Select
