@@ -54,11 +54,17 @@ export class NotificationManager {
   };
 
   private constructor() {
-    this.isSupported = 'Notification' in window && 'serviceWorker' in navigator && 'PushManager' in window;
-    this.loadPreferences();
+    this.isSupported = typeof window !== 'undefined' && 'Notification' in window && typeof navigator !== 'undefined' && 'serviceWorker' in navigator && 'PushManager' in window;
+    if (this.isSupported) {
+      this.loadPreferences();
+    }
   }
 
   static getInstance(): NotificationManager {
+    if (typeof window === 'undefined') {
+      // Return a dummy instance for SSR that won't access browser APIs
+      return new NotificationManager();
+    }
     if (!NotificationManager.instance) {
       NotificationManager.instance = new NotificationManager();
     }
@@ -66,6 +72,7 @@ export class NotificationManager {
   }
 
   private async loadPreferences(): Promise<void> {
+    if (typeof window === 'undefined') return;
     try {
       const stored = localStorage.getItem('Alian-Structure-notification-preferences');
       if (stored) {
@@ -77,6 +84,7 @@ export class NotificationManager {
   }
 
   private savePreferences(): void {
+    if (typeof window === 'undefined') return;
     try {
       localStorage.setItem('Alian-Structure-notification-preferences', JSON.stringify(this.preferences));
     } catch (error) {

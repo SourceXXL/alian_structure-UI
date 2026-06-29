@@ -43,7 +43,12 @@ interface ReferralDashboardProps {
 const ReferralDashboard: React.FC<ReferralDashboardProps> = ({ userId }) => {
   const theme = useTheme();
   const dispatch = useAppDispatch();
-  const { stats, links, rewards, loading, error } = useAppSelector((state) => state.referral);
+  const referral = useAppSelector((state) => state.referral);
+  const stats = referral?.stats || null;
+  const links = referral?.links || [];
+  const rewards = referral?.rewards || [];
+  const loading = referral?.loading || false;
+  const error = referral?.error || null;
   
   const [showShareModal, setShowShareModal] = useState(false);
   const [activeTab, setActiveTab] = useState(0);
@@ -76,7 +81,7 @@ const ReferralDashboard: React.FC<ReferralDashboardProps> = ({ userId }) => {
       .catch((err) => toast.error(err));
   };
 
-  if (loading && !stats) {
+  if (loading || !stats) {
     return (
       <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '60vh' }}>
         <CircularProgress color="primary" />

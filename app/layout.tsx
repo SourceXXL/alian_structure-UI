@@ -1,15 +1,12 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
-import { StellarWalletProvider } from '@/components/context/StellarWalletProvider';
-import { ThemeModeProvider } from '@/components/providers/ThemeModeProvider';
-import QueryProvider from '@/components/providers/QueryProvider';
-import ReduxProvider from '@/components/providers/ReduxProvider';
+import ClientProviders from '@/components/providers/ClientProviders';
 import Navigation from '@/components/Navigation';
 import PWAInstall from '@/components/PWAInstall';
 import { Toaster } from 'sonner';
-import '@/lib/i18n';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('http://localhost:3000'),
   title: 'Alian-Structure - AI Agent Marketplace',
   description: 'Create, discover, and interact with AI agents in a cosmic universe',
   keywords: ['AI agents', 'marketplace', 'automation', 'AI', 'Stellar'],
@@ -81,24 +78,7 @@ function RootLayout({ children }: { children: React.ReactNode }) {
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
         
-        {/* Service worker registration */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              if ('serviceWorker' in navigator) {
-                window.addEventListener('load', function() {
-                  navigator.serviceWorker.register('/sw.js', { scope: '/' })
-                    .then(function(registration) {
-                      console.log('SW registered: ', registration);
-                    })
-                    .catch(function(registrationError) {
-                      console.log('SW registration failed: ', registrationError);
-                    });
-                });
-              }
-            `,
-          }}
-        />
+
         
         {/* PWA meta tags */}
         <meta name="mobile-web-app-capable" content="yes" />
@@ -135,55 +115,15 @@ function RootLayout({ children }: { children: React.ReactNode }) {
           }}
         />
       </head>
-      <body className="bg-cosmic-dark text-white overflow-x-hidden">
-        <ThemeModeProvider>
-          <ReduxProvider>
-            <QueryProvider>
-              <StellarWalletProvider>
-                <div className="min-h-screen bg-gradient-to-br from-cosmic-dark via-cosmic-darker to-cosmic-dark">
+      <body className="bg-cosmic-dark text-white overflow-x-hidden" suppressHydrationWarning>
+        <ClientProviders>
+          <div className="relative z-10">
+            <Navigation />
+            {children}
+          </div>
 
-                  {/* Animated background stars */}
-                  <div className="fixed inset-0 pointer-events-none">
-                    {Array.from({ length: 100 }).map((_, i) => (
-                      <div
-                        key={i}
-                        className="absolute w-1 h-1 bg-white rounded-full animate-twinkle"
-                        style={{
-                          top: `${Math.random() * 100}%`,
-                          left: `${Math.random() * 100}%`,
-                          animationDelay: `${Math.random() * 3}s`,
-                        }}
-                      />
-                    ))}
-                  </div>
-
-                {/* Animated background stars */}
-              <div className="fixed inset-0 pointer-events-none">
-                {Array.from({ length: 100 }).map((_, i) => (
-                  <div
-                    key={i}
-                    className="absolute w-1 h-1 bg-white rounded-full animate-twinkle"
-                    style={{
-                      top: `${Math.random() * 100}%`,
-                      left: `${Math.random() * 100}%`,
-                      animationDelay: `${Math.random() * 3}s`,
-                    }}
-                  />
-                ))}
-              </div>
-
-                  <div className="relative z-10">
-                    <Navigation />
-                    {children}
-                  </div>
-
-                  <Toaster richColors position="bottom-right" />
-
-                </div>
-              </StellarWalletProvider>
-            </QueryProvider>
-          </ReduxProvider>
-        </ThemeModeProvider>
+          <Toaster richColors position="bottom-right" />
+        </ClientProviders>
       </body>
     </html>
   );
