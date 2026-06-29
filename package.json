@@ -30,9 +30,7 @@
     "critters": "^0.0.23",
     "diff": "^8.0.4",
     "i18next": "^26.0.8",
-
     "i18next-browser-languagedetector": "^8.2.1",
-
     "ipfs-http-client": "^60.0.1",
     "next": "^16.1.6",
     "next-i18next": "^15.4.3",
@@ -40,14 +38,9 @@
     "nft.storage": "^7.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-
-    "react-i18next": "^17.0.6",
-    "react-redux": "^9.2.0",
-
     "react-i18next": "~17.0.4",
     "react-redux": "^9.2.0",
     "react-window": "~2.2.7",
-
     "recharts": "^2.12.7",
     "sonner": "^2.0.7",
     "use-debounce": "^10.1.0",
